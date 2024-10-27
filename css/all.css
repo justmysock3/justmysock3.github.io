@@ -1436,3 +1436,7 @@ a {
 .help {
     font-size: 16px
 }
+
+#faq * {
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif !important;
+}
