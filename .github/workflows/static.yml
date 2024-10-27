@@ -21,15 +21,12 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  GITHUB_PAGES_URL: https://justmysocks3.github.io
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
-      url: ${{ env.GITHUB_PAGES_URL }}
+      url: https://justmysocks3.github.io
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
